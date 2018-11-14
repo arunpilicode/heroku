@@ -1,0 +1,21 @@
+{% extends 'layouts.html' %}
+
+{% block myContent %}
+ <h1>ICT Employee details</h1>
+
+ {% for emp in myEmployeeList %}
+
+ <ul class="list-group">
+     <li class="list-group-item"><strong>ID:</strong> {{emp.id}} </li>
+     <li class="list-group-item"><strong>NAME:</strong> {{emp.name}} </li>
+     <li class="list-group-item"><strong>EMAIL:</strong> {{emp.email}} </li>
+     <li class="list-group-item"><strong>place:</strong> {{emp.place}} </li>
+     <li class="list-group-item"><strong>mobile:</strong> {{emp.mobile}} </li>
+     <br><br>
+ </ul>
+
+
+
+{% endfor %}
+
+{% endblock %}
